@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+yes | sudo dnf install nasm
