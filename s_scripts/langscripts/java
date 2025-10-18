@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+curl -s "https://get.sdkman.io" | bash
+sdk install java 25-tem
+sdk install kotlin

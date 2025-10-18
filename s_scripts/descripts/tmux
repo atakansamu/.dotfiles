@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yes | sudo dnf install tmux fzf
+sudo dnf install tmux fzf
 
 
 git clone https://github.com/ThePrimeagen/tmux-sessionizer.git ~/.local/bin/tmux-sessionizer

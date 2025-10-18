@@ -1,2 +1,2 @@
 #!/bin/sh
-yes | sudo dnf install i3 i3status dmenu rofi i3lock xbacklight feh
+sudo dnf install i3 i3status dmenu rofi i3lock xbacklight feh

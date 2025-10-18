@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rm -rf /usr/local/go && curl -SL https://go.dev/dl/go1.25.3.linux-amd64.tar.gz | tar -C /usr/local -xzf
