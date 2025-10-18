@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+curl -sSL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IntelOneMono.zip | unzip -d ~/.local/share/fonts
+

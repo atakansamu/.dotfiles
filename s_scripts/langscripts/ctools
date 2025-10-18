@@ -4,4 +4,4 @@
 sudo dnf group install "C Development Tools and Libraries" "Development Tools"
 sudo dnf install cmake
 sudo dnf copr enable @dotnet-sig/dotnet
-sudo dnf install dotnet
+sudo dnf install dotnet-sdk-9.0

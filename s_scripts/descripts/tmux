@@ -2,7 +2,8 @@
 
 sudo dnf install tmux fzf
 
+git clone https://github.com/ThePrimeagen/tmux-sessionizer.git ~/.local/tmux-sessionizer && \
+mv ~/.local/tmux-sessionizer/tmux-sessionizer ~/.local/bin/ && \
+rm -rf ~/.local/tmux-sessionizer
 
-git clone https://github.com/ThePrimeagen/tmux-sessionizer.git ~/.local/bin/tmux-sessionizer
-mv ~/.local/bin/tmux-sessionizer/tmux-sessionizer ~/.local/bin/
-rm -rf ~/.local/bin/tmux-sessionizer
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

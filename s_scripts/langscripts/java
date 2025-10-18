@@ -1,6 +1,6 @@
 #!/bin/sh
 
 
-curl -s "https://get.sdkman.io" | bash
+curl -s "https://get.sdkman.io?rcupdate=false" | bash
 sdk install java 25-tem
 sdk install kotlin
