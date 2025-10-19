@@ -1,3 +1,25 @@
 #!/bin/sh
 
+PRESET_STOW=$XDG_CONFIG_HOME/input-remapper-2/presets
+CONFIG_STOW=$HOME
+
+# Delete old config files before stowing
+# rm -rf $XDG_CONFIG_HOME/.config/nvim
+for dir in $(ls $DOTFILES/pconfig/.config/)
+do
+	echo $XDG_CONFIG_HOME/"$dir"
+	# rm -rf $XDG_CONFIG_HOME/"$dir"
+done
+
+# Stow config files
+
+
+
+INSTALL_SCRIPTS_DIR=$DOTFILES/s_scripts
+
+for i_script in $( find $INSTALL_SCRIPTS_DIR -maxdepth 2 -type f -not -path '*./\.*' )
+do 
+	# ./"$i_script"
+	echo "$i_script"
+done
 
