@@ -25,24 +25,23 @@ require("lazy").setup({
   require("plugins.gitsigns"),
 
   require("plugins.which-key"),
-
+  require("plugins.debug"),
   require("plugins.telescope"),
-
+  require("plugins.indent_line"),
   require("plugins.lsp"),
-
+  require("plugins.lualine"),
+  require("plugins.lint"),
   require("plugins.conform"),
-
   require("plugins.blink-cmp"),
-
-  require("plugins.tokyonight"),
-
+  require("plugins.colorschemes.rose-pine"),
+  -- require("plugins.colorschemes.tokyonight"),
+  -- require("plugins.colorschemes.catppuccin"),
   require("plugins.todo-comments"),
-
   require("plugins.mini"),
-
   require("plugins.treesitter"),
-
+  require("plugins.neo-tree"),
   require("plugins.harpoon"),
+  require("plugins.transparent"),
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --

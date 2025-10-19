@@ -1,0 +1,24 @@
+#!/bin/sh
+
+export GOPATH=$HOME/personal/go
+export DOTFILES=$HOME/.dotfiles
+export GIT_EDITOR=$VIM
+
+addToPath() {
+    if [[ "$PATH" != *"$1"* ]]; then
+	export PATH=$PATH:$1
+    fi
+}
+
+addToPathFront() {
+    if [[ ! -z "$2" ]] || [[ "$PATH" != *"$1"* ]]; then
+	export PATH=$1:$PATH
+    fi
+}
+
+create_sh() {
+
+  touch "$@"
+  echo '#!/bin/sh' >> "$@"
+  chmod +x "$@"
+}

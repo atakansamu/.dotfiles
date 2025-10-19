@@ -222,7 +222,10 @@ return {
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
-
+        bashls = {
+          cmd = { "bash-language-server", "start" },
+          filetypes = { "bash", "sh", "zsh" },
+        },
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },

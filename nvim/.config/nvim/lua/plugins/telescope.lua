@@ -60,7 +60,7 @@ return {
         --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
         --   },
         -- },
-        -- pickers = {}
+        pickers = { find_files = { hidden = true, file_ignore_patterns = { "^%.git/" } } },
         extensions = {
           ["ui-select"] = {
             require("telescope.themes").get_dropdown(),
@@ -107,6 +107,8 @@ return {
       vim.keymap.set("n", "<leader>sn", function()
         builtin.find_files({ cwd = vim.fn.stdpath("config") })
       end, { desc = "[S]earch [N]eovim files" })
+
+      vim.keymap.set("n", "<C-p>", builtin.git_files, {})
     end,
   },
 }

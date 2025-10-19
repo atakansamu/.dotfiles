@@ -1,21 +1,23 @@
 #!/bin/sh
 
-PRESET_STOW=$XDG_CONFIG_HOME/input-remapper-2/presets
 CONFIG_STOW=$HOME
-
+STOW_FILES=("i3" "tmux" "tmux-sessionizer" "personal" "nvim" "zsh" "input-remapper-2/presets")
 # Delete old config files before stowing
-# rm -rf $XDG_CONFIG_HOME/.config/nvim
-for dir in $(ls $DOTFILES/pconfig/.config/)
+for dir in "${STOW_FILES[@]}"
 do
 	echo $XDG_CONFIG_HOME/"$dir"
 	# rm -rf $XDG_CONFIG_HOME/"$dir"
 done
 
 # Stow config files
-
-
+# stow -d "$DOTFILES" -t "$HOME" \
+# 	pconfig \
+# 	zsh \
+# 	presets \
+# 	nvim
 
 INSTALL_SCRIPTS_DIR=$DOTFILES/s_scripts
+
 
 for i_script in $( find $INSTALL_SCRIPTS_DIR -maxdepth 2 -type f -not -path '*./\.*' )
 do 

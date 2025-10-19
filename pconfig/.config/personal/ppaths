@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Go paths
+addToPath $GOPATH/bin
+addToPath "/usr/local/go/bin"
+addToPath $HOME/.local/scripts
+addToPath $HOME/.local/apps

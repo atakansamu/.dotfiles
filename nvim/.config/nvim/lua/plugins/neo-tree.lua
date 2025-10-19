@@ -15,10 +15,31 @@ return {
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        visible = true,
+        hide_dotfiles = false,
+        hide_gitignored = false,
+        hide_ignored = false,
+      },
       window = {
         mappings = {
           ["\\"] = "close_window",
         },
+      },
+    },
+
+    git_status = {
+      symbols = {
+        added = "+", -- or "✚"
+        modified = "", -- or ""
+        deleted = "✖", -- this can only be used in the git_status source
+        renamed = "󰁕", -- this can only be used in the git_status source
+        -- Status type
+        untracked = "U",
+        ignored = "I",
+        unstaged = "󰄱",
+        staged = "",
+        conflict = "",
       },
     },
   },

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+
+VIM="nvim"
+export XDG_CONFIG_HOME=$HOME/.config
+export PCONFIG=$XDG_CONFIG_HOME/personal
+source $PCONFIG/penv
+source $PCONFIG/paliases
+source $PCONFIG/ppaths
+source $PCONFIG/pkeymaps
+
+# Add rust to the path
+if [  -e $HOME/.cargo/env   ]
+then
+    . $HOME/.cargo/env
+fi
+# Add local bin to the path
+if [ -e $HOME/.local/bin/env  ]
+then
+    . $HOME/.local/bin/env
+fi
+
+# vim: filetype=sh
