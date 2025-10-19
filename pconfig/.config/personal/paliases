@@ -1,4 +1,4 @@
 #!/bin/sh
 
-alias configsymls="symlinks -rv ~/.config"
+alias configsymls="symlinks -rv ~/"
 alias vim="nvim"
