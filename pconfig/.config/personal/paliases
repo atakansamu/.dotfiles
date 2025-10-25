@@ -2,3 +2,4 @@
 
 alias configsymls="symlinks -rv ~/"
 alias vim="nvim"
+alias pyenvact="source ./.venv/bin/activate"
