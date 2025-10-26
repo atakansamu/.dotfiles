@@ -11,6 +11,7 @@ return {
     event = "VimEnter",
     dependencies = {
       "nvim-lua/plenary.nvim",
+      "BurntSushi/ripgrep",
       { -- If encountering errors, see telescope-fzf-native README for installation instructions
         "nvim-telescope/telescope-fzf-native.nvim",
 
@@ -55,12 +56,29 @@ return {
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
         --
-        -- defaults = {
-        --   mappings = {
-        --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-        --   },
-        -- },
-        pickers = { find_files = { hidden = true, file_ignore_patterns = { "^%.git/" } } },
+        defaults = {
+          vimgrep_arguments = {
+            "rg",
+            "--files",
+            "--smart-case",
+          },
+          -- file_ignore_patterns = {
+          --   "build",
+          -- },
+          -- mappings = {
+          --   i = { ["<c-enter>"] = "to_fuzzy_refine" },
+          -- },
+        },
+        pickers = {
+          find_files = {
+            hidden = true,
+            file_ignore_patterns = { "^%.git/" },
+            find_command = {
+              "rg",
+              "--files",
+            },
+          },
+        },
         extensions = {
           ["ui-select"] = {
             require("telescope.themes").get_dropdown(),
