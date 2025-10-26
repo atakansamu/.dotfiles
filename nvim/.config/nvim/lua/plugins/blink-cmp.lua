@@ -58,7 +58,8 @@ return {
         --
         -- See :h blink-cmp-config-keymap for defining your own keymap
         preset = "default",
-
+        ["<C-space>"] = {},
+        ["<C-d>"] = { "show", "show_documentation", "hide_documentation" },
         -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
       },
@@ -68,13 +69,24 @@ return {
         -- Adjusts spacing to ensure icons are aligned
         nerd_font_variant = "mono",
       },
-
+      --
       completion = {
         -- By default, you may press `<c-space>` to show the documentation.
         -- Optionally, set `auto_show = true` to show the documentation after a delay.
         documentation = { auto_show = false, auto_show_delay_ms = 500 },
       },
-
+      -- completion = {
+      --   documentation = {
+      --     draw = function(opts)
+      --       if opts.item and opts.item.documentation and opts.item.documentation.value then
+      --         local out = require("pretty_hover.parser").parse(opts.item.documentation.value)
+      --         opts.item.documentation.value = out:string()
+      --       end
+      --
+      --       opts.default_implementation(opts)
+      --     end,
+      --   },
+      -- },
       sources = {
         default = { "lsp", "path", "snippets", "lazydev" },
         providers = {

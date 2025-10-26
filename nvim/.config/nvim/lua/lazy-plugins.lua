@@ -21,9 +21,8 @@ require("lazy").setup({
   -- modular approach: using `require 'path.name'` will
   -- include a plugin definition from file lua/path/name.lua
   require("plugins.autopairs"),
-
   require("plugins.gitsigns"),
-
+  require("plugins.pretty_hover"),
   require("plugins.which-key"),
   require("plugins.debug"),
   require("plugins.telescope"),
@@ -37,6 +36,7 @@ require("lazy").setup({
   -- require("plugins.colorschemes.tokyonight"),
   -- require("plugins.colorschemes.catppuccin"),
   require("plugins.todo-comments"),
+  require("plugins.render-markdown"),
   require("plugins.mini"),
   require("plugins.treesitter"),
   require("plugins.neo-tree"),
