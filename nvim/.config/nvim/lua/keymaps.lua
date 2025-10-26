@@ -31,10 +31,10 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 
 -- Tmux sessionizer keymaps
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-vim.keymap.set("n", "<M-h>", "<cmd>silent !tmux neww tmux-sessionizer -s 0<CR>")
-vim.keymap.set("n", "<M-t>", "<cmd>silent !tmux neww tmux-sessionizer -s 1<CR>")
-vim.keymap.set("n", "<M-n>", "<cmd>silent !tmux neww tmux-sessionizer -s 2<CR>")
-vim.keymap.set("n", "<M-s>", "<cmd>silent !tmux neww tmux-sessionizer -s 3<CR>")
+vim.keymap.set("n", "<M-q>", "<cmd>silent !tmux neww tmux-sessionizer 0<CR>")
+vim.keymap.set("n", "<M-w>", "<cmd>silent !tmux neww tmux-sessionizer 1<CR>")
+vim.keymap.set("n", "<M-e>", "<cmd>silent !tmux neww tmux-sessionizer 2<CR>")
+vim.keymap.set("n", "<M-r>", "<cmd>silent !tmux neww tmux-sessionizer 3<CR>")
 
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
