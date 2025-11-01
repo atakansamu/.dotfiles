@@ -1,2 +1,4 @@
 #!/bin/sh
+
+git clone git://github.com/tobi-wan-kenobi/bumblebee-status.git $XDG_CONFIG_HOME/i3/bumblebee-status
 sudo dnf install i3 i3-gaps i3status dmenu rofi i3lock xbacklight feh
