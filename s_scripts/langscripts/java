@@ -2,5 +2,6 @@
 
 
 curl -s "https://get.sdkman.io?rcupdate=false" | bash
+source ~/.zshrc
 sdk install java 25-tem
 sdk install kotlin
