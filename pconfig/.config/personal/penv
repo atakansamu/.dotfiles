@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export GOPATH=$HOME/personal/go
+export GOPATH=$HOME/.local/go
 export DOTFILES=$HOME/.dotfiles
 export GIT_EDITOR=$VIM
 

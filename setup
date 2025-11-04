@@ -15,14 +15,3 @@ stow -d "$DOTFILES" -t "$HOME" \
 	zsh \
 	nvim \
 	git
-
-INSTALL_SCRIPTS_DIR=$DOTFILES/s_scripts
-
-
-for i_script in $( find $INSTALL_SCRIPTS_DIR -maxdepth 2 -type f -not -path '*./\.*' )
-do 
-	# Uncomment in a fresh install
-	# ./"$i_script"
-	echo "$i_script"
-done
-
