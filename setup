@@ -1,7 +1,7 @@
 #!/bin/sh
-
+DOTFILES=~/.dotfiles
 CONFIG_STOW=$HOME
-STOW_FILES=( "tmux" "tmux-sessionizer" "personal" "nvim" )
+STOW_FILES=( "tmux" "tmux-sessionizer" "personal" "nvim" "sway" "rofi")
 # Delete old config files before stowing
 for dir in "${STOW_FILES[@]}"
 do
@@ -14,4 +14,6 @@ stow -d "$DOTFILES" -t "$HOME" \
 	pconfig \
 	zsh \
 	nvim \
-	git
+	git \
+	sway \
+	rofi
