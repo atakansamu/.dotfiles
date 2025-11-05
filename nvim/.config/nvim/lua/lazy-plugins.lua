@@ -28,6 +28,7 @@ require("lazy").setup({
   require("plugins.telescope"),
   require("plugins.indent_line"),
   require("plugins.lsp"),
+  require("plugins.java"),
   require("plugins.lualine"),
   require("plugins.lint"),
   require("plugins.conform"),
