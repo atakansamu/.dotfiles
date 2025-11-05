@@ -206,7 +206,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-gaps inner 15
+gaps inner 10
 
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
