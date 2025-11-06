@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+sudo dnf -y install opencv-devel tbb-devel
