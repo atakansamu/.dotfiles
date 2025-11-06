@@ -1,7 +1,0 @@
-#!/bin/sh
-
-
-sudo dnf install @c-development @development-tools
-sudo dnf install cmake
-sudo dnf copr enable @dotnet-sig/dotnet
-sudo dnf install dotnet-sdk-9.0

@@ -1,4 +1,0 @@
-#!/bin/sh
-
-sudo rm -rf /usr/local/go && curl -SLO --output-dir ~/Downloads https://go.dev/dl/go1.25.3.linux-amd64.tar.gz 
-sudo tar -xzf ~/Downloads/go1.25.3.linux-amd64.tar.gz -C /usr/local 

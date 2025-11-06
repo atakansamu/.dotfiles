@@ -1,9 +1,0 @@
-#!/bin/sh
-
-
-curl -sSLO --output-dir ~/Downloads/ https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IntelOneMono.zip
-curl -sSLO --output-dir ~/Downloads/ https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/0xProto.zip
-curl -sSLO --output-dir ~/Downloads/ https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Iosevka.zip
-unzip ~/Downloads/IntelOneMono.zip -d ~/.local/share/fonts
-unzip ~/Downloads/0xProto.zip -d ~/.local/share/fonts
-unzip ~/Downloads/Iosevka.zip -d ~/.local/share/fonts
