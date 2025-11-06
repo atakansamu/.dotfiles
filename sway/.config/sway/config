@@ -5,6 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 ### Variables
+set $DOTFILES ~/.dotfiles
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -33,7 +34,7 @@ set $menu $rofi_cmd -show combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-output * bg /usr/share/backgrounds/default.jxl fill
+output * bg "$DOTFILES/backgrounds/DS3-firekeeper.jpg" fill
 #
 # Example configuration:
 #
@@ -63,7 +64,7 @@ output * bg /usr/share/backgrounds/default.jxl fill
       tap enabled
       natural_scroll enabled
       accel_profile flat
-      pointer_accel 0.78
+      pointer_accel 0.8
       click_method clickfinger
       tap enabled
   }
