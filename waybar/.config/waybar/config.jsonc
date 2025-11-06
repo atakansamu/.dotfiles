@@ -5,8 +5,8 @@
     "spacing": 1,
     "margin": 0,
     "modules-left": ["custom/icon", "sway/workspaces", "sway/mode", "custom/weather"],
-        "modules-center": [],                                                                           //battery   //disk     // uptime      //updates        // systray
-    "modules-right": ["idle_inhibitor", "clock","pulseaudio", "backlight", "network", "cpu", "memory", "temperature", "battery", "disk", "custom/uptime", "tray"],
+        "modules-center": [ "clock" ],                                                                           //battery   //disk     // uptime      //updates        // systray
+    "modules-right": ["idle_inhibitor", "pulseaudio", "backlight", "network", "cpu", "memory", "temperature", "battery", "disk", "custom/uptime", "tray"],
 
 
     "sway/workspaces": {
@@ -89,7 +89,7 @@
     },
 
     "clock": {
-        "format": "󰥔 {:%H:%M}",
+        "format": "{:%a, %B%e | 󰥔 %H:%M}",
         "format-alt": "󰃮 {:%Y-%m-%d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "calendar": {
