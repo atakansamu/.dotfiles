@@ -50,8 +50,10 @@ exec_always killall swayidle; swayidle -w \
          timeout 1800 'swaylock -f -c 000000' \
          timeout 2400 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
          before-sleep 'playerctl pause' \
-         before-sleep 'swaylock -f -c 000000'
+         before-sleep 'swaylock -f -c 000000' \
+         timeout 3600 'systemctl suspend'
 
+exec swaylock --image "$DOTFILES/backgrounds/DS3-firekeeper.jpg"
 
 for_window {
   [app_id="brave-browser"] inhibit_idle fullscreen
