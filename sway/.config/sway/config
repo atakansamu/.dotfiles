@@ -131,7 +131,14 @@ assign {
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
-#
+    # Move workspaces to screen
+    bindsym $mod+Control+Shift+$right move workspace to output eDP-1
+    bindsym $mod+Control+Shift+$left move workspace to output HDMI-A-1
+    bindsym $mod+Control+Shift+1 move workspace to output HDMI-A-1
+    bindsym $mod+Control+Shift+2 move workspace to output eDP-1
+    # bindsym $mod+Control+Shift+Down move workspace to output down
+    # bindsym $mod+Control+Shift+Up move workspace to output up#
+
 # Workspaces:
 #
     # Switch to workspace

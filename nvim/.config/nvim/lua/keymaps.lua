@@ -42,9 +42,14 @@ vim.keymap.set("n", "<M-r>", "<cmd>silent !tmux neww tmux-sessionizer 3<CR>")
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
--- [[ Basic Autocommands ]]
+vim.keymap.set("n", "[e", ":m .-2<CR>==")
+vim.keymap.set("n", "]e", ":m .+1<CR>==")
+
+vim.keymap.set("v", "[e", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "]e", ":m '>+1<CR>gv=gv")
 --  See `:help lua-guide-autocommands`
 
+-- [[ Basic Autocommands ]]
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.hl.on_yank()`
