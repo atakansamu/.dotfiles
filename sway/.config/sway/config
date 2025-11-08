@@ -46,7 +46,7 @@ output * bg "$DOTFILES/backgrounds/DS3-firekeeper.jpg" fill
 #
 # Example configuration:
 #
-exec swayidle -w \
+exec_always killall swayidle; swayidle -w \
          timeout 1800 'swaylock -f -c 000000' \
          timeout 2400 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
          before-sleep 'playerctl pause' \
