@@ -53,7 +53,6 @@ exec_always killall swayidle; swayidle -w \
          before-sleep 'swaylock -f -c 000000' \
          timeout 3600 'systemctl suspend'
 
-exec swaylock --image "$DOTFILES/backgrounds/DS3-firekeeper.jpg"
 
 for_window {
   [app_id="brave-browser"] inhibit_idle fullscreen
