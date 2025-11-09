@@ -17,6 +17,7 @@ set $right l
 # Your preferred terminal emulator
 # Recommends: foot
 set $term ghostty
+set $ss grim -g "$(slurp)" ~/Pictures/Screenshots/"$(date +%Y-%m-%d_%H-%M-%S)".png
 
 font pango:0xProto Nerd Font Mono 11
 # Your preferred application launcher
@@ -93,6 +94,7 @@ for_window {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod+Control+s exec $ss
 
     # Kill focused window
     bindsym $mod+Shift+q kill
