@@ -1,0 +1,13 @@
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Aseprite
+Comment=Animated sprite editor & pixel art tool
+Exec=/home/atakan.mutlu/.local/share/aseprite/build/bin/aseprite %F
+Icon=/home/atakan.mutlu/.local/share/aseprite/data/icons/ase256.png
+Path=/home/atakan.mutlu/.local/share/aseprite/
+Terminal=false
+Categories=Graphics;2DGraphics;Editor;
+StartupNotify=true
+MimeType=image/aseprite;image/x-aseprite;

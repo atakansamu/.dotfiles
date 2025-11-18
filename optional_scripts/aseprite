@@ -1,0 +1,13 @@
+#!/bin/sh
+
+sudo dnf install -y gcc-c++ clang libcxx-devel cmake ninja-build libX11-devel libXcursor-devel libXi-devel libXrandr-devel mesa-libGL-devel fontconfig-devel
+
+git clone --recursive https://github.com/aseprite/aseprite.git $HOME/.local/share/
+
+bash $HOME/.local/share/aseprite/build.sh
+
+ln -s $HOME/.local/share/aseprite/build/bin/aseprite $HOME/.local/bin/aseprite
+
+ln -s $DOTFILES/optional_scripts/launchers/aseprite.desktop $HOME/.local/share/applications/aseprite.desktop
+
+update-desktop-database $HOME/.local/share/applications/

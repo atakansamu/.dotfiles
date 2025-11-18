@@ -67,7 +67,7 @@ vec4 saturate(vec4 color, float factor) {
 const vec4 TRAIL_COLOR = vec4(0.262, 0.0, 0.450, 1.0);
 
 const float OPACITY = 0.6;
-const float DURATION = 0.1; //IN SECONDS
+const float DURATION = 0.09; //IN SECONDS
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
 {
