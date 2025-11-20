@@ -1,0 +1,7 @@
+#!/bin/sh
+
+curl -SL -o $HOME/Downloads/git-lfs.tar.gz https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-amd64-v3.7.1.tar.gz
+tar xzf $HOME/Downloads/git-lfs.tar.gz -C $HOME/.local/share/
+rm $HOME/Downloads/git-lfs.tar.gz
+sudo bash $HOME/.local/share/git-lfs-3.7.1/install.sh
+git lfs install

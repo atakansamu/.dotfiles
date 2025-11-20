@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+curl -SL -o $HOME/.local/bin/krita https://download.kde.org/stable/krita/5.2.13/krita-5.2.13-x86_64.AppImage
+chmod +x $HOME/.local/bin/krita
+mkdir $HOME/.local/share/icons
+curl -SL -o $HOME/.local/share/icons/krita.ico https://krita.org/images/favicon.ico
+ln -s $DOTFILES/optional_scripts/launchers/krita.desktop ~/.local/share/applications/krita.desktop
+update-desktop-database $HOME/.local/share/applications/

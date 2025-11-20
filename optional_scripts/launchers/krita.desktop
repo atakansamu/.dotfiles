@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Krita
+Comment=Krita: Professional painting and digital art creation program
+Version=1.0
+Terminal=false
+Exec=/home/atakan.mutlu/.local/bin/krita %F
+Icon=/home/atakan.mutlu/.local/share/icons/krita.ico
+Categories=Graphics;
+MimeType=image/krita;image/vnd.krita.kra;
