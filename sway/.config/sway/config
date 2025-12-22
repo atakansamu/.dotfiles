@@ -239,6 +239,8 @@ bindsym $mod+r mode "resize"
 
 gaps inner 10
 
+default_border none
+
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
