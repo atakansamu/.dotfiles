@@ -9,6 +9,14 @@ source $PCONFIG/paliases
 source $PCONFIG/ppaths
 source $PCONFIG/pkeymaps
 
+CURRENT_VULKAN_SDK_VERSION="1.4.341.1"
+
+# Add vulkan tools to the path
+if [  -e $HOME/.vulkan/$CURRENT_VULKAN_SDK_VERSION/setup-env.sh  ]
+then
+    . $HOME/.vulkan/$CURRENT_VULKAN_SDK_VERSION/setup-env.sh
+fi
+
 # Add rust to the path
 if [  -e $HOME/.cargo/env   ]
 then

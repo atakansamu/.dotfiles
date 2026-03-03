@@ -1,3 +1,8 @@
 #!/bin/sh
 
-sudo dnf install vulkan-tools vulkan-loader-devel mesa-vulkan-drivers vulkan-validation-layers-devel
+mkdir -p ~/.vulkan
+SDK_VERSION=$(curl -s https://vulkan.lunarg.com/sdk/latest/linux.txt)
+curl -L -O "https://sdk.lunarg.com/sdk/download/${SDK_VERSION}/linux/vulkan_sdk.tar.xz?Human=true" --output-dir ~/.vulkan
+tar xf ~/.vulkan/vulkan_sdk.tar.xz -C ~/.vulkan
+
+
