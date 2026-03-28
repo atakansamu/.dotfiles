@@ -6,6 +6,8 @@ return {
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {
+        "cmake",
+        "glsl",
         "bash",
         "c",
         "cpp",
@@ -21,6 +23,9 @@ return {
         "vim",
         "vimdoc",
         "java",
+        "json",
+        "javascript",
+        "typescript",
       },
       -- Autoinstall languages that are not installed
       auto_install = true,

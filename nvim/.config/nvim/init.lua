@@ -6,6 +6,17 @@ vim.g.maplocalleader = " "
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 -- [[ Setting options ]]
+--
+
+vim.filetype.add({
+  extension = {
+    cmake = "cmake",
+  },
+  filename = {
+    ["CMakeLists.txt"] = "cmake",
+  },
+})
+
 require("options")
 
 -- [[ Basic Keymaps ]]

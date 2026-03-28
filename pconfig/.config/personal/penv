@@ -3,6 +3,7 @@
 export GOPATH=$HOME/.local/go
 export DOTFILES=$HOME/.dotfiles
 export GIT_EDITOR=$VIM
+export VCPKG_ROOT=$HOME/.local/share/vcpkg
 
 addToPath() {
     if [[ "$PATH" != *"$1"* ]]; then

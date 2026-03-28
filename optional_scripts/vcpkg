@@ -1,3 +1,4 @@
 #!/bin/sh
 
-sudo dnf install vcpkg
+git clone https://github.com/microsoft/vcpkg.git "$HOME/.local/share/vcpkg"
+cd $HOME/.local/share/vcpkg && ./bootstrap-vcpkg.sh

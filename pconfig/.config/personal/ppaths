@@ -5,3 +5,4 @@ addToPath $GOPATH/bin
 addToPath "/usr/local/go/bin"
 addToPath $HOME/.local/scripts
 addToPath $HOME/.local/apps
+addToPath $VCPKG_ROOT
